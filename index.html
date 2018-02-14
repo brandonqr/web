@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practica M05 - Control de versiones</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1 id="titulo" class="text-center">titulo</h1>
+    <div class="container">
+      <div class="row">
+        <div id="divPrincipal"></div>
+      </div>
+
+    </div>
+    <audio autoplay>
+ <source src="http://slider.kz/download/156/psv4.userapi.com/c1449/u6711105/audios/82d63e3671eb/%D0%93%D0%B8%D0%BC%D0%BD%20-%20Valencia%20FC.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+  </body>
+  <script type="text/javascript">
+  $.getJSON( "documentacio.json", function( data ) {
+
+    $.each( data, function( titulo, titulosObj ) {
+      $('#titulo').html(titulo)
+      var divPrincipal=$('<div>');
+      $.each( titulosObj, function( subtitulo, subtituloObj ) {
+        divPrincipal.append($('<h3>').html(subtitulo).addClass('text-center'));
+        //$('body').append($('<h3>').addClass('text-center').html(subtitulo));
+        //console.log( subtitulo + ": " + subtituloObj );
+
+        $.each( subtituloObj, function( subtituloSecundario, subtituloSecundarioObj ) {
+          divPrincipal.append($('<h5>').css({margin:'50px auto'}).html(subtituloSecundario).addClass('text-center font-weight-bold'));
+          //$('body').append($('<h3>').addClass('text-center').html(subtitulo));
+          //console.log( key + ": " + value );
+          $.each( subtituloSecundarioObj, function( llave, objeto ) {
+            var img = $('<img>').attr({src:objeto.imagen, width:600}).addClass('rounded mx-auto d-block img-fluid');
+            var p = $('<p>').html(objeto.descripcion).addClass('text-left text-sm-center text-md-center text-lg-center text-xl-center');
+            divPrincipal.append(p,img);
+            //$('body').append($('<h3>').addClass('text-center').html(subtitulo));
+            //console.log( value );
+            console.log(objeto['imagen'])
+        });
+      });
+    });
+    $('#divPrincipal').append(divPrincipal);
+});
+});
+  </script>
+</html>

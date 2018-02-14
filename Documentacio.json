@@ -1,0 +1,132 @@
+{
+    "PRACTICA DE GIT": {
+        "GIT": {
+            "Que es GIT": [{
+                "descripcion": "Es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente. ",
+                "imagen": "./img/git_0.png"
+            }, {
+                "descripcion": "En otras palabras es una herramienta para mantener el historico de las versiones de nuestros programas.",
+                "imagen": ""
+            }],
+            "Que es GITHUB": [{
+                "descripcion": "Es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.",
+                "imagen": "./img/git_1.png"
+            }]
+        },
+        "EMPEZAR CON GITHUB": {
+            "Crear nuevo proyecto": [{
+                "descripcion": "Para crear un nuevo proyecto en github, hay que ir a su pagina web y crear un nuevo repositorio",
+                "imagen": "./img/git_2.png"
+            }, {
+                "descripcion": "Luego crear un proyecto de visual studio, mi proyecto se llama PracticaPersona",
+                "imagen": "./img/git_3.png"
+            }, {
+                "descripcion": "posicionarse en la carpeta donde está la practica, luego ejecutar git init para iniciar el repositorio",
+                "imagen": "./img/git_4.png"
+            }, {
+                "descripcion": "Para ver los archivos que faltan subir al servidor, la consola los marca en rojo cuando se ejecuta git status",
+                "imagen": "./img/git_5.png"
+            }, {
+                "descripcion": "Para subir los archivos al servidor se utiliza el comando git add .",
+                "imagen": ""
+            }, {
+                "descripcion": "Para ver los archivos que se han subido con el comando anterior, se tiene que usar el git status, los archivos que se agregaron apareceran en color verde",
+                "imagen": "./img/git_6.png"
+            }, {
+                "descripcion": "Para confirmar los cambios ejecuto el comando git commit - m, el -m es para poner un mensaje, tambien se puede utilizar el comando git init -am, éste comando agrega y confirma los cambios",
+                "imagen": "./img/git_7.png"
+            }, {
+                "descripcion": "Y por ultimo para subir los archivos al servidor github, se hace un git push",
+                "imagen": "./img/git_8.png"
+            }, {
+                "descripcion": "Para ver que se realizaron los cambios, se tiene que ir a la web y entrar a mi repositorio",
+                "imagen": "./img/git_9.png"
+            }]
+        },
+        "TRABAJANDO EN VISUAL STUDIO": {
+            "Agregar la Clase Persona": [{
+                "descripcion": "He agregado una clase llamada Persona en mi proyecto, para comparar los archivos que me faltan subir a github, tengo que usar el comando git status",
+                "imagen": "./img/git_10.png"
+            }, {
+                "descripcion": "",
+                "imagen": "./img/git_11.png"
+            }, {
+                "descripcion": "",
+                "imagen": "./img/git_12.png"
+            }],
+            "Modificando la clase Persona": [{
+                "descripcion": "He agregado unas funciones a la clase persona, para que sea mas funcional y las he subido a github",
+                "imagen": "./img/git_13.png"
+            }, {
+                "descripcion": "para ver comprobar los commits en una version grafica, me dirijo a su web",
+                "imagen": "./img/git_14.png"
+            }, {
+                "descripcion": "ahora quiero modificar la funcion esMajorEdat, no me gusta la forma en la que está creada",
+                "imagen": "./img/git_15.png"
+            }, {
+                "descripcion": "Por está que está mas entendible para la mayoría",
+                "imagen": "./img/git_16.png"
+            }, {
+                "descripcion": "Compruebo los cambios y subo la nueva modificacion",
+                "imagen": "./img/git_17.png"
+            }, {
+                "descripcion": "En la web de github, cuando entro en el commit, me meustra los cambios que hice, las additions y deletions. ",
+                "imagen": "./img/git_18.png"
+            }],
+            "Terminando la clase Persona y Test": [{
+                "descripcion": "He terminado el proyecto Persona, ahora lo subiré a github",
+                "imagen": "./img/git_19.png"
+            }, {
+                "descripcion": "Ahora le agregaré un tag para que el resto vea que el proyecto ya se puede descargar y que está todo testeado",
+                "imagen": "./img/git_20.png"
+            }, {
+                "descripcion": "",
+                "imagen": "./img/git_21.png"
+            }, {
+                "descripcion": "Agregué un tag, porque hice un despliegue a producción",
+                "imagen": "./img/git_22.png"
+            }],
+            "Trabajando con Ramas": [{
+                "descripcion": "con git branch, listas las ramas que tiene el proyecto. en éste paso crearé una rama para agregar otra clase al proyecto",
+                "imagen": "./img/git_25.png"
+            }, {
+                "descripcion": "he creado la clase, agrgué algunos atributos y guardé los cambios en la rama principal, luego creé una nueva rama llamada clase-vendedor en la cual crearía una clase Vendedor, agregaría el constructor y una propiedad.",
+                "imagen": "./img/git_26.png"
+            }, {
+                "descripcion": "Cuando estoy en la rama master, es lo que tengo, no está la clase Vendedor agregada.",
+                "imagen": "./img/git_27.png"
+            }, {
+                "descripcion": "en cambio cuando cambio de rama a la rama clase-vendedor....",
+                "imagen": "./img/git_28.png"
+            }, {
+                "descripcion": "",
+                "imagen": "./img/git_29.png"
+            }, {
+                "descripcion": "Para fusionar as ramas, solo hace falta un git merge y listo.",
+                "imagen": "./img/git_30.png"
+            }, {
+                "descripcion": "Luego un add, commit y push para subirlo",
+                "imagen": "./img/git_31.png"
+            }, {
+                "descripcion": "",
+                "imagen": "./img/git_32.png"
+            }],
+            "Cosas importantes que no usé": [{
+                "descripcion": "Git pull: por ejemplo si modifico el código desde otro sitio que no es mi ordenador, ya sea desde la misma web de github u otra persona que está en la misma rama, el codigo estará desincronizado y para solucionar éste problema tendremos que usar el pull",
+                "imagen": "./img/git_23.png"
+            }, {
+                "descripcion": "Para mover archivos en git, se tiene que eliminar con rm y luego un add para agregar y eso es todo",
+                "imagen": ""
+            }, {
+                "descripcion": "Para eliminar ramas git branch -D nombredelarama, la D mayuscula es para eliminar sin revisar que haya commits",
+                "imagen": ""
+            }, {
+                "descripcion": "FIN",
+                "imagen": ""
+            }, {
+                "descripcion": "Link de mi repositorio: <a href='https://github.com/brandonqr/M05-CDV-2018-MONTILIVI/tree/master/PracticaPersona'>Link a mi repositorio</a>",
+                "imagen": ""
+            }]
+        }
+    }
+}

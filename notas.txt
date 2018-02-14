@@ -1,0 +1,20 @@
+Adjunto un HTML para que se pueda ver mejor
+
+Practica GIT
+    GIT
+        ¿Ques es git?
+        ¿Por que usar git?
+        finalidad de git
+    Creando proyecto
+                    0
+                        titulo
+                        descripcion
+                        imagen
+                    1
+                        titulo
+                        descripcion
+                        imagen
+                    2
+                        titulo
+                        descripcion
+                        imagen
